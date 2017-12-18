@@ -1,6 +1,7 @@
 <div>
-    student:{{student.name}}
+  student:<a href="#" (click)="clicked()">{{student.name}}</a>
     <div *ngIf="student.isJedi">
       Jedi Temple: {{student.temple}}
+      <textarea #description></textarea><button (click)="description.focus()">Focus</button>
     </div>
 </div>
